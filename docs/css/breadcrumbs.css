@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#breadcrumbs > li {
+	list-style-type: none;
+	display: inline;
+}
+
+#breadcrumbs > li:not(:first-of-type)::before {
+	content: "→‎";
+}
+
+.ניקוד > dt {
+	font-size: 150%;
+}
+
+.ניקוד > dd {
+	font-size: 200%;
+}
