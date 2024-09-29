@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="hu">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>
-			🇻🇳 ← f5 ← w2 ← gy ← wp ← há
+			🇻🇳 ← f8 ← w3 ← gy ← wp ← há
 		</title>
 		<link
 			rel="stylesheet"
 			href="/css/breadcrumbs.css">
+		<link
+			rel="stylesheet"
+			href="index.css">
 	</head>
 	<body>
 		<ul id="breadcrumbs">
@@ -25,30 +28,48 @@
 			</li>
 			<li>
 				<a href="../">
-					2. hét</a>
+					3. hét</a>
 			</li>
 			<li>
-				5. feladat
+				8. feladat
 				🇻🇳
 			</li>
 		</ul>
 		<h1>
-			5. feladat
+			8. feladat
 			🇻🇳
 		</h1>
-		<form lang="en">
+		<form>
+			Méret:
 			<input
-				type="text"
-				id="text"
-				placeholder="URL">
+				type="number"
+				id="size"
+				min="2"
+				value="6">
+			Játékosok:
+			<input
+				type="number"
+				id="players"
+				min="1"
+				value="1">
 			<input
 				type="button"
-				id="btn"
-				value="loadImg">
+				id="startBtn"
+				vlaue="Start">
 		</form>
-		<img
-			src="">
-		<script src="loadImgUrl.js">
+		<p>
+		Játékos:
+		<span id="currentPlayer">
+		</span>
+		Lépések:
+		<span id="steps">
+		</span>
+		</p>
+		<table>
+			<tbody>
+			</tbody>
+		</table>
+		<script src="index.js">
 		</script>
 	</body>
 </html>
