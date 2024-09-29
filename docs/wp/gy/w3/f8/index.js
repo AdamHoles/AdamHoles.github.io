@@ -60,4 +60,23 @@ const setup = () => {
 		for (let j = 0; j < x; ++j)
 			row.insertCell();
 	}
+	
+	// tömb 0--17-ig, felhasználva a .keys(), tömb index mint érték
+	arr = [...Array(x ** 2 / 2).keys()];
+	// megduplázzunk a tömböt vagyis minden szám kétszer szerepel
+	arr = arr.concat(arr);
+	console.log(arr);
+
+	// hátulról megyünk előre
+	for (let i = x ** 2 - 1; i > 0; --i) {
+		// a j egy random szám a maradék elemek közül
+		let j = Math.floor(Math.random() * i + 1);
+		// felcseréljük randomot meg a számot
+		[arr[i], arr[j]] = [arr[j], arr[i]];
+	}
+	console.log(arr);
+	currentPlayer.innerText = 1;
 }
+
+startBtn.addEventListener("click", setup);
+table.addEventListener("click", onClick);
