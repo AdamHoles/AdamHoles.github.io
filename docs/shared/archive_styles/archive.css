@@ -1,3 +1,11 @@
 @charset "UTF-8";
 /*
  * SitePoint code archive for Build Your Own Web Site Using HTML And CSS
+ * © 2006 SitePoint Pty Ltd
+ *
+ * For more books and articles visit https://www.sitepoint.com/
+ *
+ */
+html {
+	background-color: #003366;
+}
