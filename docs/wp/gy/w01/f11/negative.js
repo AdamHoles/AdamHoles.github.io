@@ -1,5 +1,5 @@
-#!/usr/local/bin/node
-//#!/usr/bin/node
+#!/usr/bin/node
+//#!/usr/local/bin/node
 
 const array = [3, 5, 12, -8, 4, 1]
 const negativeNumber = array.find(a => a < 0);

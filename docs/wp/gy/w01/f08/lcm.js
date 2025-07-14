@@ -13,3 +13,6 @@ const lcm = (a, b) => {
 
 console.log(lcm(4, 3));
 console.log("// → 12");
+
+console.log(lcm(4, 6));
+console.log("// → 12");

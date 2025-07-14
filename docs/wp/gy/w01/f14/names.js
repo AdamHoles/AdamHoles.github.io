@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 
 const array = ["Kovács János", "Nagy István", "Kis Lajos", "Tóth Péter"]
 
